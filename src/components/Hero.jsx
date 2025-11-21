@@ -66,7 +66,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/50 to-[#050505]" />
             </div>
 
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
                     {/* Left Column: Content */}

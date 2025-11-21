@@ -27,13 +27,13 @@ const Navbar = () => {
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || mobileMenuOpen ? 'bg-black/50 backdrop-blur-xl border-b border-white/5' : 'bg-transparent'}`}
             >
-                <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+                <div className="max-w-7xl mx-auto px-6 md:px-12 h-24 flex items-center justify-between">
                     {/* Logo */}
-                    <a href="#" className="flex items-center gap-2 group">
-                        <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center text-black font-bold text-lg tracking-tighter group-hover:scale-95 transition-transform">
+                    <a href="#" className="flex items-center gap-3 group">
+                        <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-black font-bold text-xl tracking-tighter group-hover:scale-95 transition-transform">
                             O
                         </div>
-                        <span className="font-semibold text-lg tracking-tight text-white">OptiFlow</span>
+                        <span className="font-semibold text-xl tracking-tight text-white">OptiFlow</span>
                     </a>
 
                     {/* Desktop Nav */}
@@ -42,7 +42,7 @@ const Navbar = () => {
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="text-sm font-medium text-white/60 hover:text-white transition-colors"
+                                className="text-base font-medium text-white/60 hover:text-white transition-colors"
                             >
                                 {link.name}
                             </a>
@@ -50,16 +50,16 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop CTA */}
-                    <div className="hidden md:flex items-center gap-4">
-                        <a href="#" className="text-sm font-medium text-white hover:text-white/80 transition-colors">
+                    <div className="hidden md:flex items-center gap-6">
+                        <a href="#" className="text-base font-medium text-white hover:text-white/80 transition-colors">
                             Log in
                         </a>
                         <a
                             href="#"
-                            className="group flex items-center gap-2 px-4 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-white/90 transition-all"
+                            className="group flex items-center gap-2 px-5 py-2.5 bg-white text-black rounded-full text-sm font-bold hover:bg-white/90 transition-all"
                         >
                             Get Started
-                            <ChevronRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
+                            <ChevronRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
                         </a>
                     </div>
 
