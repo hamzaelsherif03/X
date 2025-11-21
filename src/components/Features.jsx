@@ -157,32 +157,32 @@ const FeatureCard = ({ feature, i }) => {
                                 <motion.div
                                     initial={{ scale: 0.9, opacity: 0 }}
                                     whileInView={{ scale: 1, opacity: 1 }}
-                                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-56 md:w-64 bg-[#1A1A1A]/90 backdrop-blur border border-white/10 rounded-xl p-4 shadow-2xl"
+                                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 md:w-64 bg-[#1A1A1A]/90 backdrop-blur border border-white/10 rounded-xl p-3 md:p-4 shadow-2xl mx-4"
                                 >
-                                    <div className="flex items-center gap-3 mb-4">
-                                        <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-500">
-                                            <Globe size={20} />
+                                    <div className="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
+                                        <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-500">
+                                            <Globe size={18} className="md:w-5 md:h-5" />
                                         </div>
                                         <div>
-                                            <div className="text-xs text-white/60">Shipment ID</div>
-                                            <div className="text-sm font-bold text-white">#SHP-8921</div>
+                                            <div className="text-[10px] md:text-xs text-white/60">Shipment ID</div>
+                                            <div className="text-xs md:text-sm font-bold text-white">#SHP-8921</div>
                                         </div>
                                     </div>
-                                    <div className="space-y-3">
-                                        <div className="flex justify-between text-xs">
+                                    <div className="space-y-2 md:space-y-3">
+                                        <div className="flex justify-between text-[10px] md:text-xs">
                                             <span className="text-white/40">Origin</span>
-                                            <span className="text-white">Shanghai, CN</span>
+                                            <span className="text-white">Shanghai</span>
                                         </div>
-                                        <div className="flex justify-between text-xs">
+                                        <div className="flex justify-between text-[10px] md:text-xs">
                                             <span className="text-white/40">Destination</span>
-                                            <span className="text-white">Los Angeles, US</span>
+                                            <span className="text-white">Los Angeles</span>
                                         </div>
                                         <div className="h-1 w-full bg-white/10 rounded-full overflow-hidden">
                                             <div className="h-full w-[70%] bg-gradient-to-r from-purple-500 to-pink-500" />
                                         </div>
                                         <div className="flex justify-between items-center pt-1">
-                                            <span className="text-xs font-medium text-green-400">On Schedule</span>
-                                            <span className="text-xs text-white/40">ETA: 2 Days</span>
+                                            <span className="text-[10px] md:text-xs font-medium text-green-400">On Schedule</span>
+                                            <span className="text-[10px] md:text-xs text-white/40">ETA: 2 Days</span>
                                         </div>
                                     </div>
                                 </motion.div>
