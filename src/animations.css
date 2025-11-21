@@ -1,0 +1,62 @@
+/* Global Animations */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal-on-scroll {
+    opacity: 0;
+    animation: fadeUp 0.8s ease-out forwards;
+    animation-play-state: paused;
+}
+
+.reveal-on-scroll.is-visible {
+    animation-play-state: running;
+}
+
+/* Staggered delays */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+/* Premium Hover Effects */
+.hover-glow {
+    transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+/* Gradient Borders */
+.gradient-border {
+    position: relative;
+    background: #0B0F19;
+    border-radius: 4px;
+}
+
+.gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    background: linear-gradient(135deg, #3B82F6, #14B8A6);
+    border-radius: 5px;
+    opacity: 0.5;
+}

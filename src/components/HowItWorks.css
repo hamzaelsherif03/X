@@ -1,0 +1,111 @@
+.how-it-works-section {
+    position: relative;
+    background-color: #0a0a0f;
+    padding: 6rem 0;
+}
+
+.hiw-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.hiw-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hiw-desc {
+    color: #a0a0a0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hiw-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .hiw-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .hiw-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.hiw-line {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(0, 240, 255, 0) 0%, rgba(0, 240, 255, 0.5) 50%, rgba(0, 240, 255, 0) 100%);
+    z-index: 0;
+}
+
+@media (min-width: 1024px) {
+    .hiw-line {
+        display: block;
+    }
+}
+
+.hiw-card-wrapper {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+}
+
+.hiw-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.hiw-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.hiw-icon-box {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1.5rem;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(112, 0, 255, 0.1));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #60a5fa;
+    transition: transform 0.3s ease;
+}
+
+.hiw-card:hover .hiw-icon-box {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.hiw-card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.hiw-card-desc {
+    font-size: 0.875rem;
+    color: #a0a0a0;
+    line-height: 1.5;
+}

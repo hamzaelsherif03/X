@@ -1,0 +1,234 @@
+.benefits-section {
+    padding: 10rem 0;
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    .benefits-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.benefits-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.benefits-desc {
+    font-size: 1.125rem;
+    color: #9CA3AF;
+    line-height: 1.7;
+    margin-bottom: 4rem;
+    max-width: 500px;
+}
+
+.benefits-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.benefit-stat {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.benefits-section {
+    padding: 10rem 0;
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    .benefits-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.benefits-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.benefits-desc {
+    font-size: 1.125rem;
+    color: #9CA3AF;
+    line-height: 1.7;
+    margin-bottom: 4rem;
+    max-width: 500px;
+}
+
+.benefits-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.benefit-stat {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.benefit-stat:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.stat-suffix {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: #9CA3AF;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Visual Chart Area */
+.benefits-visual {
+    position: relative;
+}
+
+.benefits-card {
+    background: #0A0A0A;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 2px;
+    padding: 3rem;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+.chart-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.chart-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.chart-labels {
+    width: 120px;
+    text-align: right;
+}
+
+.chart-label-text {
+    display: block;
+    font-size: 0.875rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.chart-label-sub {
+    display: block;
+    font-size: 0.75rem;
+    color: #6B7280;
+}
+
+.chart-bar-bg {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.chart-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    position: relative;
+}
+
+.chart-bar-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.bg-blue {
+    background: #fff;
+}
+
+.bg-purple {
+    background: #ccc;
+}
+
+.bg-pink {
+    background: #999;
+}
+
+.bg-cyan {
+    background: #666;
+}
