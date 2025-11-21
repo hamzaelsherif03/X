@@ -39,10 +39,10 @@ const steps = [
 
 const Process = () => {
     return (
-        <section className="relative py-24 bg-black">
+        <section className="relative py-16 md:py-24 bg-black">
             <div className="container max-w-6xl">
                 {/* Header */}
-                <div className="text-center mb-20">
+                <div className="text-center mb-12 md:mb-20">
                     <motion.span
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ const Process = () => {
                 </div>
 
                 {/* Steps Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                     {steps.map((step, index) => {
                         const Icon = step.icon;
                         return (
