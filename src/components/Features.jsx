@@ -157,7 +157,7 @@ const FeatureCard = ({ feature, i }) => {
                                 <motion.div
                                     initial={{ scale: 0.9, opacity: 0 }}
                                     whileInView={{ scale: 1, opacity: 1 }}
-                                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 bg-[#1A1A1A]/90 backdrop-blur border border-white/10 rounded-xl p-4 shadow-2xl"
+                                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-56 md:w-64 bg-[#1A1A1A]/90 backdrop-blur border border-white/10 rounded-xl p-4 shadow-2xl"
                                 >
                                     <div className="flex items-center gap-3 mb-4">
                                         <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-500">
@@ -248,7 +248,7 @@ const FeatureCard = ({ feature, i }) => {
 
 const Features = () => {
     return (
-        <section className="bg-[#050505] relative">
+        <section id="features" className="py-12 md:py-0 bg-[#050505] relative">
             {features.map((feature, i) => (
                 <FeatureCard key={feature.id} feature={feature} i={i} />
             ))}

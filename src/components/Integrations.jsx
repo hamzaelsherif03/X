@@ -17,7 +17,7 @@ const BentoCard = ({ children, className, delay = 0 }) => (
 
 const Integrations = () => {
     return (
-        <section className="py-20 md:py-32 bg-[#050505] relative overflow-hidden">
+        <section id="integrations" className="py-20 md:py-32 bg-[#050505] relative overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="max-w-2xl mb-20">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">Seamless Integration</h2>
