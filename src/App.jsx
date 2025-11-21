@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import CostCalculator from './components/CostCalculator';
 import Trust from './components/Trust';
 import Solutions from './components/Solutions';
 import Features from './components/Features';
@@ -21,6 +22,7 @@ function App() {
                 <Features />
                 <Integrations />
                 <Testimonials />
+                <CostCalculator />
                 <Pricing />
                 <CTA />
             </main>
