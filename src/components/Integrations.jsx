@@ -103,52 +103,53 @@ const Integrations = () => {
                         </div>
                     </BentoCard>
 
-                    {/* Card 4: API First */}
-                    <BentoCard className="md:col-span-3 p-0 flex flex-col md:flex-row items-center bg-white/[0.02]" delay={0.3}>
-                        <div className="p-8 md:p-12 max-w-lg">
-                            <div className="flex items-center gap-3 mb-4">
-                                <div className="p-2 rounded-lg bg-purple-500/10 border border-purple-500/20">
-                                    <GitBranch className="text-purple-500" size={20} />
+                    {/* Card 4: API First - Mobile Optimized */}
+                    <BentoCard className="md:col-span-3 p-0 bg-white/[0.02] flex flex-col" delay={0.3}>
+                        {/* Text Section */}
+                        <div className="p-6 md:p-10">
+                            <div className="flex items-center gap-2 md:gap-3 mb-3">
+                                <div className="p-1.5 md:p-2 rounded-lg bg-purple-500/10 border border-purple-500/20">
+                                    <GitBranch className="text-purple-500" size={16} />
                                 </div>
-                                <h3 className="text-xl font-bold">Developer First API</h3>
+                                <h3 className="text-base md:text-xl font-bold">Developer First API</h3>
                             </div>
-                            <p className="text-sm text-white/50 mb-8 leading-relaxed">
+                            <p className="text-xs md:text-sm text-white/50 mb-4 md:mb-6 leading-relaxed max-w-md">
                                 Build custom workflows with our robust GraphQL API. Comprehensive documentation, typed SDKs, and webhooks for every event.
                             </p>
-                            <button className="text-sm font-semibold text-white flex items-center gap-2 hover:gap-3 transition-all group">
-                                Read the Docs <ArrowRight size={16} className="text-purple-500" />
+                            <button className="text-xs md:text-sm font-semibold text-white flex items-center gap-2 hover:gap-3 transition-all">
+                                Read the Docs <ArrowRight size={14} className="text-purple-500" />
                             </button>
                         </div>
 
-                        {/* Code Snippet */}
-                        <div className="flex-1 w-full h-full min-h-[250px] bg-[#050505] border-l border-white/10 relative font-mono text-xs overflow-hidden">
-                            <div className="absolute top-0 left-0 right-0 h-10 bg-white/5 border-b border-white/5 flex items-center justify-between px-4">
-                                <div className="flex gap-1.5">
-                                    <div className="w-2.5 h-2.5 rounded-full bg-red-500/20" />
-                                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/20" />
-                                    <div className="w-2.5 h-2.5 rounded-full bg-green-500/20" />
+                        {/* Code Section */}
+                        <div className="bg-[#050505] border-t border-white/10">
+                            {/* Terminal Header */}
+                            <div className="h-8 bg-white/5 border-b border-white/5 flex items-center justify-between px-3">
+                                <div className="flex gap-1">
+                                    <div className="w-2 h-2 rounded-full bg-red-500/30" />
+                                    <div className="w-2 h-2 rounded-full bg-yellow-500/30" />
+                                    <div className="w-2 h-2 rounded-full bg-green-500/30" />
                                 </div>
-                                <div className="text-white/30 text-[10px]">POST /graphql</div>
+                                <div className="text-white/20 text-[9px]">POST /graphql</div>
                             </div>
 
-                            <div className="p-6 pt-14 text-blue-300 overflow-x-auto">
-                                <div><span className="text-purple-400">query</span> <span className="text-yellow-300">GetShipment</span>($id: ID!) {'{'}</div>
-                                <div className="pl-4 text-white">shipment(id: $id) {'{'}</div>
-                                <div className="pl-8 text-cyan-300">id</div>
-                                <div className="pl-8 text-cyan-300">status</div>
-                                <div className="pl-8 text-cyan-300">currentLocation {'{'}</div>
-                                <div className="pl-12 text-cyan-300">lat</div>
-                                <div className="pl-12 text-cyan-300">lng</div>
-                                <div className="pl-8 text-white">{'}'}</div>
-                                <div className="pl-8 text-cyan-300">estimatedDelivery</div>
+                            {/* Code Lines */}
+                            <div className="p-3 md:p-4 pb-6 font-mono text-[9px] md:text-[10px] leading-[1.6]">
+                                <div><span className="text-purple-400">query</span> <span className="text-yellow-300">GetShipment</span>(<span className="text-blue-300">$id</span>: <span className="text-cyan-400">ID!</span>) {'{'}</div>
+                                <div className="pl-2">
+                                    <span className="text-white">shipment</span>(<span className="text-blue-300">id</span>: <span className="text-blue-300">$id</span>) {'{'}
+                                </div>
+                                <div className="pl-4 text-cyan-300">id</div>
+                                <div className="pl-4 text-cyan-300">status</div>
+                                <div className="pl-4">
+                                    <span className="text-cyan-300">currentLocation</span> {'{'}
+                                </div>
+                                <div className="pl-6 text-cyan-300">lat</div>
+                                <div className="pl-6 text-cyan-300">lng</div>
                                 <div className="pl-4 text-white">{'}'}</div>
+                                <div className="pl-4 text-cyan-300">estimatedDelivery</div>
+                                <div className="pl-2 text-white">{'}'}</div>
                                 <div>{'}'}</div>
-                            </div>
-
-                            <div className="absolute top-14 right-4">
-                                <button className="p-2 rounded hover:bg-white/10 text-white/40 hover:text-white transition-colors">
-                                    <Copy size={14} />
-                                </button>
                             </div>
                         </div>
                     </BentoCard>

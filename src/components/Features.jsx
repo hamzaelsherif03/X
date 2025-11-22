@@ -146,22 +146,22 @@ const FeatureCard = ({ feature, i }) => {
                                     </svg>
                                 </div>
 
-                                {/* Route Line */}
-                                <svg className="absolute inset-0 w-full h-full overflow-visible">
-                                    <path d="M100,400 Q250,200 500,150" fill="none" stroke="#8B5CF6" strokeWidth="2" strokeDasharray="4 4" className="animate-[dash_3s_linear_infinite]" />
-                                    <circle cx="100" cy="400" r="6" fill="#8B5CF6" className="animate-pulse" />
-                                    <circle cx="500" cy="150" r="6" fill="#EC4899" />
+                                {/* Route Line - Properly constrained */}
+                                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet">
+                                    <path d="M80,320 Q200,160 350,220 T500,80" fill="none" stroke="#8B5CF6" strokeWidth="3" strokeDasharray="8 4" className="animate-[dash_3s_linear_infinite]" />
+                                    <circle cx="80" cy="320" r="7" fill="#8B5CF6" className="animate-pulse" />
+                                    <circle cx="500" cy="80" r="7" fill="#EC4899" />
                                 </svg>
 
-                                {/* Shipment Card */}
+                                {/* Shipment Card - Mobile optimized */}
                                 <motion.div
                                     initial={{ scale: 0.9, opacity: 0 }}
                                     whileInView={{ scale: 1, opacity: 1 }}
-                                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 md:w-64 bg-[#1A1A1A]/90 backdrop-blur border border-white/10 rounded-xl p-3 md:p-4 shadow-2xl mx-4"
+                                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] max-w-[220px] md:w-64 bg-[#1A1A1A]/70 backdrop-blur border border-white/10 rounded-xl p-3 md:p-4 shadow-2xl"
                                 >
                                     <div className="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
                                         <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-500">
-                                            <Globe size={18} className="md:w-5 md:h-5" />
+                                            <Globe size={16} className="md:w-5 md:h-5" />
                                         </div>
                                         <div>
                                             <div className="text-[10px] md:text-xs text-white/60">Shipment ID</div>
